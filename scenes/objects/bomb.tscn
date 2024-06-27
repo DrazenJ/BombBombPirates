@@ -1,0 +1,38 @@
+[gd_scene load_steps=7 format=3 uid="uid://byv5jefrqksrm"]
+
+[ext_resource type="Texture2D" uid="uid://civ28mkqurjmq" path="res://assets/src/Sprites/7-Objects/1-BOMB/1-Bomb Off/1.png" id="1_pt0th"]
+[ext_resource type="PhysicsMaterial" uid="uid://j3aryl2hx14j" path="res://assets/materials/physics/bomb_material.tres" id="1_u6svq"]
+[ext_resource type="Script" path="res://scenes/objects/bomb.gd" id="2_qd572"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_am0fg"]
+radius = 5.0
+height = 32.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3agly"]
+radius = 14.1421
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_pxn4c"]
+radius = 128.004
+
+[node name="Bomb" type="RigidBody2D"]
+physics_material_override = ExtResource("1_u6svq")
+script = ExtResource("2_qd572")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_pt0th")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 18)
+shape = SubResource("CapsuleShape2D_am0fg")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(1, 20)
+shape = SubResource("CircleShape2D_3agly")
+
+[node name="ExplosionTimer" type="Timer" parent="."]
+
+[node name="ExplosionRadius" type="Area2D" parent="."]
+
+[node name="RadiusDetection" type="CollisionShape2D" parent="ExplosionRadius"]
+position = Vector2(0, 19)
+shape = SubResource("CircleShape2D_pxn4c")

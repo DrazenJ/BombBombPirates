@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://4t5jns0y7d3i"]
+
+[ext_resource type="SpriteFrames" uid="uid://vqaphslpyt7y" path="res://assets/materials/animation/window_light/window_light.tres" id="1_qqrs4"]
+
+[node name="WindowLight" type="AnimatedSprite2D"]
+sprite_frames = ExtResource("1_qqrs4")
+frame_progress = 0.393937
+centered = false

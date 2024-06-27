@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://brngyh8h7h2l4"]
+
+[ext_resource type="PhysicsMaterial" uid="uid://daq0gxwc3h703" path="res://assets/materials/physics/heavy_objects_material.tres" id="1_ygu6f"]
+[ext_resource type="Texture2D" uid="uid://by01wosmrq0s7" path="res://assets/src/Sprites/7-Objects/12-Other Objects/Barrel.png" id="2_cgqe3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o6l1s"]
+size = Vector2(28, 44)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_56c53"]
+radius = 21.0
+height = 44.0
+
+[node name="Barrel" type="RigidBody2D"]
+physics_material_override = ExtResource("1_ygu6f")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_cgqe3")
+centered = false
+
+[node name="CollisionShape" type="CollisionShape2D" parent="."]
+position = Vector2(21, 22)
+shape = SubResource("RectangleShape2D_o6l1s")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(21, 22)
+shape = SubResource("CapsuleShape2D_56c53")
