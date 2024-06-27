@@ -51,8 +51,8 @@ This project is licensed under the Creative Commons Zero v1.0 Universal (CC0 1.0
 
 
 ## Credits
-Lead Developer: Drazen "Draz" Jankovic
-Artwork: [Pixel Frog](https://pixelfrog-assets.itch.io/)
-Special thanks to the Godot community for all the tutorials that helped make this project possible.
+Lead Developer: Drazen "Draz" Jankovic  
+Artwork: [Pixel Frog](https://pixelfrog-assets.itch.io/)  
+Special thanks to the Godot community for all the tutorials that helped make this project possible.  
 
 Enjoy the game and happy bombing, pirates!
