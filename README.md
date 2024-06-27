@@ -1,5 +1,6 @@
 # Bomb Bomb Pirates
 
+This project is meant for me to learn Godot 4 and experiment with various techniques, expect a bit buggy or unoptimized code.  
 **Bomb Bomb Pirates** is a thrilling and explosive Bomberman-inspired game developed using Godot 4. Dive into a world of pirates, treasure, and strategic bomb placement to outwit your opponents and claim victory!
 
 ## Table of Contents
