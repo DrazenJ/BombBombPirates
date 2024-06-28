@@ -19,6 +19,11 @@ func explode():
 			var direction = (body.global_position - global_position).normalized()
 			var force = direction * 500
 			body.apply_impulse(force, Vector2())
+		elif body is CharacterBody2D:
+			print("CharacterBody ", body)
+			var direction = (body.global_position - global_position).normalized()
+			var force = direction * 500
+			body.velocity += force  # Directly modify the velocity
 	queue_free()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
